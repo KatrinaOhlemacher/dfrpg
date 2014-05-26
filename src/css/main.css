@@ -1,0 +1,28 @@
+#wrapper {
+  padding: 20px;
+}
+
+.chunk {
+  padding: 10px 5px;
+  margin: 1px;
+}
+
+#basic-info {
+  background-color: Chartreuse;
+}
+
+#aspects {
+  background-color: Gainsboro;
+}
+
+#skills {
+  background-color: DodgerBlue;
+}
+
+#powers {
+  background-color: Bisque;
+}
+
+.form-control {
+  width: 75%;
+}
