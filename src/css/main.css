@@ -23,6 +23,14 @@
   background-color: Bisque;
 }
 
+#stress {
+  background-color: Sienna;
+}
+
+#consequences {
+  background-color: LightPink;
+}
+
 .form-control {
   width: 75%;
 }
