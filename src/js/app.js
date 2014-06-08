@@ -1,9 +1,9 @@
 $(function(){
 
 
-  Character = {
+  var Character = {
     aspects: {}
-  },
+  };
 
   saveBasicInfo = function () {
     Character.playerName = $('#player-name').val();
@@ -13,7 +13,7 @@ $(function(){
     Character.highConcept = $('#high-concept').val();
     Character.trouble = $('#trouble').val();
     console.log(Character);
-  }
+  };
 
 
 });
