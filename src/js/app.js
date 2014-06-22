@@ -5,7 +5,8 @@ $(function(){
     aspects: {}
   };
 
-  saveBasicInfo = function () {
+
+  $('#saveBasicInfo').click(function(){
     Character.playerName = $('#player-name').val();
     Character.characterName = $('#character-name').val();
     Character.template = $('#template').val();
@@ -13,7 +14,6 @@ $(function(){
     Character.highConcept = $('#high-concept').val();
     Character.trouble = $('#trouble').val();
     console.log(Character);
-  };
-
+  });
 
 });
