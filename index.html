@@ -81,7 +81,7 @@
           </label>
           <input class="form-control" id="trouble" placeholder="Trouble">
         </div>
-        <button type="button" class="btn btn-primary" onclick="saveBasicInfo ()">
+        <button type="button" class="btn btn-primary" id="save-basic-info">
           Save
         </button>
       </form>
@@ -92,13 +92,124 @@
     <div class="chunk" id="aspects">
 
       Aspects
+      <h3 class="phase-heading">
+        Background: Where Did You Come From?
+      </h3>
+
       <div class="form-group">
-        <label class="sr-only" for="trouble">
-          Trouble
+        <label class="sr-only" for="background-story">
+          Background
         </label>
-        <input class="form-control" id="thing" placeholder="thing">
+        <textarea class="form-control" rows="5" id="background-story" placeholder="What nation, region, culture are you from? What were your family circumstances like? What’s your relationship with your family? How were you educated? What were your friends like? Did you get into trouble much? If you’re supernatural, how early did you learn this? Were there problems?"></textarea>
       </div>
-      <button type="button" class="btn btn-primary" onclick="saveAspects ()">
+      <div class="form-group">
+        <label class="sr-only" for="background-aspect">
+          Background Aspect
+        </label>
+        <input class="form-control" id="background-aspect" placeholder="Aspect">
+      </div>
+      <h3 class="phase-heading">
+        Rising Conflict: What Shaped You?
+      </h3>
+      <div class="form-group">
+        <label class="sr-only" for="rising-conflict-story">
+          Rising Conflict Story
+        </label>
+        <textarea class="form-control" rows="5" id="rising-conflict-story" placeholder="Who were the prominent people in your life at this point? Do you have enemies? Close and fast friends? How did your high concept and trouble aspects shape you and events around you? What were the most significant choices you made? What lessons did you learn in this time?"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="rising-conflict-aspect">
+          Rising Conflict Aspect
+        </label>
+        <input class="form-control" id="rising-conflict-aspect" placeholder="Aspect">
+      </div>
+
+      <h3 class="phase-heading">
+        The Story: What Was Your First Adventure?
+      </h3>
+      <div class="form-group">
+        <label class="sr-only" for="first-adventure-title">
+          First Adventure Title
+        </label>
+        <input class="form-control" id="first-adventure-title" placeholder="Story Title">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="first-adventure-guest">
+          First Adventure Guest Star
+        </label>
+        <input class="form-control" id="first-adventure-guest" placeholder="Guest Starring...">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="first-adventure">
+          Your First Adventure
+        </label>
+        <textarea class="form-control" rows="5" id="first-adventure" placeholder="Describe your first adventure. Include a cameo or a guest starring role by one of the other players' characters."></textarea>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="first-adventure-aspect">
+          First Adventure Aspect
+        </label>
+        <input class="form-control" id="first-adventure-aspect" placeholder="Aspect">
+      </div>
+
+      <h3 class="phase-heading">
+        Guest Star: Whose Path Have You Crossed?
+      </h3>
+      <div class="form-group">
+        <label class="sr-only" for="guest-story-title">
+          Guest Story Title
+        </label>
+        <input class="form-control" id="guest-story-title" placeholder="Guest Story Title">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="story-owner">
+          Whose Story Was It?
+        </label>
+        <input class="form-control" id="story-owner" placeholder="Whose Story Was It?">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="guest-events">
+          Guest Events
+        </label>
+        <textarea class="form-control" rows="5" id="guest-events" placeholder="Describe the adventure you shared with another player's character."></textarea>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="guest-aspect">
+          Guest Aspect
+        </label>
+        <input class="form-control" id="guest-aspect" placeholder="Aspect">
+      </div>
+
+      <h3 class="phase-heading">
+        Guest Star Redux: Who Else's Path Have You Crossed?
+      </h3>
+      <div class="form-group">
+        <label class="sr-only" for="guest-story-title2">
+          Guest Story Title
+        </label>
+        <input class="form-control" id="guest-story-title2" placeholder="Guest Story Title">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="story-owner2">
+          Whose Story Was It?
+        </label>
+        <input class="form-control" id="story-owner2" placeholder="Whose Story Was It?">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="guest-events2">
+          Guest Events
+        </label>
+        <textarea class="form-control" rows="5" id="guest-events2" placeholder="Describe the adventure you shared with another player's character."></textarea>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="guest-aspect2">
+          Guest Aspect
+        </label>
+        <input class="form-control" id="guest-aspect2" placeholder="Aspect">
+      </div>
+
+
+      <button type="button" class="btn btn-primary" id="save-aspects">
         Save
       </button>
 
