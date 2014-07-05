@@ -5,6 +5,26 @@ $(document).ready(function(){
     phases: []
   };
 
+  var Skills = [
+    {
+      name: "Skill Name 1",
+      description: "Skill Name 1 description here",
+      id: 'skill1'
+    },
+
+    {
+      name: "Skill Name 2",
+      description: "Skill Name 2 description here",
+      id: 'skill2'
+    },
+
+    {
+      name: "Skill Name 3",
+      description: "Skill Name 3 description here",
+      id: 'skill3'
+    }
+  ];
+
   $("#save-basic-info").click(function(){
     Character.playerName = $("#player-name").val();
     Character.characterName = $("#character-name").val();
@@ -67,4 +87,28 @@ $(document).ready(function(){
     Character.aspects.guestStarRedux = $("#guest-aspect2").val();
     Character.phases.push(phaseFive);
   }
+
+  $("#skills").on("click", ".add-skill", function(event){
+    loadUpSkills();
+  });
+
+  $(".modal-body").on("click", ".skill", function(event){
+    var plusButton = $(".add-skill");
+    var skill = $(this);
+    var skillName = $(':first-child', this);
+    skillName.addClass('skill');
+    $(".add-skill").remove();
+    skill.remove();
+
+    $("#skills").append(skillName);
+    $("#skills").append(plusButton);
+  });
+
+  function loadUpSkills(){
+    for (var i = 0; i < Skills.length; i++) {
+
+      $('.modal-body').append("<p class='skill' ><span id="+Skills[i].id+">" + Skills[i].name + "</span><span> : " + Skills[i].description + "</span></p>");
+    };
+  }
+
 });

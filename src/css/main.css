@@ -20,7 +20,7 @@ textarea {
 }
 
 #skills {
-  background-color: DodgerBlue;
+  background-color: Pink;
 }
 
 #powers {
@@ -37,4 +37,17 @@ textarea {
 
 .form-control {
   width: 75%;
+}
+
+.skill {
+  font-size: 2em;
+  display: block;
+}
+
+.skill > span:first-child{
+  color: Red;
+}
+
+.skill-value {
+  color: darkblue;
 }
